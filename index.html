@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 4</title>
+	<title>Portfolio</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,28 +28,24 @@
 
 <body>
 	
-	<!-- Custom HTML -->
-
-	<div class="loader">
-			<div class="loader_inner"></div>
-		</div>
-	
-	<header class="main_head" data-parallax="scroll" data-image-src="/img/2.jpg" data-z-index="1">
+	<header class="main_head" >
 		<div class="top_line">
 			<div class="container">
 				<div class="row">
-					<div class="col col-md-2">
-						<div class="logo">
-							<img src="img/logo.png" alt="">
-						</div>
-					</div>
-					<div class="col col-md-7 offset-md-3">
+					<div class="col col-sm-12 col-md-7 offset-md-3">
+							<button class="menu">
+									<span class="sandwich">
+										<span class="sw-topper"></span>
+										<span class="sw-bottom"></span>
+										<span class="sw-footer"></span>
+									</span>
+								</button>
 						<nav class="nav_mnu">
 							<ul>
 								<li><a href="#">Главная</a></li>
 								<li><a href="#work">Мои работы</a></li>
-								<li><a href="#">Услуги</a></li>
-								<li><a href="#">Контакты</a></li>
+								<li><a href="#services">Услуги</a></li>
+								<li><a href="#contacts">Контакты</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -69,7 +65,7 @@
 		</div>
 	</header>
 <!-- Section about -->
-	<section class="about animation_1">
+	<section class="s_about">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -78,7 +74,7 @@
 						<div class="row">
 							<div class="col-12 col-sm-12 col-md-6">
 								<div class="author_photo">
-									<img src="img/author.png" alt="">
+									<img src="img/author.png" alt="author">
 								</div>
 							</div>
 							<div class="col-12 col-sm-12 col-md-6">
@@ -86,7 +82,7 @@
 								используя все, что я знаю о создании веб-сайтов и воплощаю это в своих работах.Крупными проектами я не занимаюсь.
 								<br> В своих проектах я использую сетку Bootstrap, припроцессор SASS и Galp.Пример мои работ вы можите скачать ниже. </p>
 							</div>
-							<div class="view"><a class="btn" href="#">Связаться</a></div>
+							<div class="view"><a class="btn" href="#contacts">Связаться</a></div>
 						</div>
 					</div>
 				</div>
@@ -94,11 +90,11 @@
 		</div>
 	</section>
 <!-- Section Info -->
-	<section class="info">	
+	<section class="s_info">	
 		<div class="container">
 			<div class="row">
 				<div class="col col-sm-12 col-md-6 ">
-					<img src="img/responive.png" alt="">
+					<img src="img/responive.png" alt="responive">
 				</div>
 				<div class="col col-sm-12 col-md-6">
 					<p>Полностью отзывчивые, специально разработанные веб-сайты под CMS Wordpress</p>
@@ -107,7 +103,7 @@
 		</div>
 	</section>
 <!-- Section services -->
-	<section class="services">
+	<section class="s_services" id="services">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-sm-4 col-md-4">
@@ -135,69 +131,80 @@
 		</div>
 	</section>
 <!-- Section Quality Work -->
-	<section class="quality_work">
+	<section class="s_quality_work">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-12">
 					<h3>Связаться</h3>
-					<div class="qua_button"><a class="btn" href="#">Вперед</a></div>
+					<div class="qua_button"><a class="btn" href="#contacts">Вперед</a></div>
 				</div>
 			</div>
 		</div>
 	</section>
 <!-- Section Work -->
-	<section class="s_work">
+	<section class="s_work" id="work">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-12">
 					<h1>Мои работы</h1>
 					<div class="inner_work">
 						<div class="row">
-							<div class="col-6">
+							<div class="col-sm-12 col-md-6">
 								<img src="img/work1.png" alt="">
 							</div>
-							<div class="col-6"><p>Полностью рабочий LandingPage, созданный с нуля, выполненный в темных тонах.Все исходные материалы прилагаются ниже.</p>
-								<a href="#"><img src="img/down_icon.png" alt=""></a>
+							<div class="col-sm-12 col-md-6"><p>Полностью рабочий LandingPage, созданный с нуля, выполненный в темных тонах.</p>
+								<a href="work/photoblog/index.html">[Смотреть DEMO]</a>
+								<a href="#">[Скачать]</a>
 							</div>					
-							<div class="col-6">
-								<img src="img/work2.png" alt="">
+							<div class="col-sm-12 col-md-6">
+								<img src="img/work2.png" alt="work">
 							</div>
-							<div class="col-6"><p>Простой LandingPage, выполненый ввиде порфолио фотографа.Все исходные материалы прилагаются ниже</p>
-								<a href="#"><img src="img/down_icon.png" alt=""></a>
+							<div class="col-sm-12 col-md-6"><p>Простой LandingPage, выполненый ввиде порфолио фотографа.</p>
+								<a href="work/kyte/index.html">[Смотреть DEMO]</a>							
+								<a href="#">[Скачать]</a>
 							</div>					
-							<div class="col-6">
-								<img src="img/work3.png" alt="">
+							<div class="col-sm-12 col-md-6">
+								<img src="img/work3.png" alt="work">
 							</div>
-							<div class="col-6"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ab odio ullam quae repellendus, sint qui quas commodi, facere possimus porro, saepe quam animi impedit fuga est ipsum! Iusto, saepe.</p>
-								<a href="#"><img src="img/down_icon.png" alt=""></a>
+							<div class="col-sm-12 col-md-6"><p>Простой LandingPage</p>
+								<a href="work/project/index.html">[Смотреть DEMO]</a>	
+								<a href="#">[Скачать]</a>
 							</div>					
 						</div>	
 					</div>
 				</div>
 			</div>
 		</section>
-<!-- Section Work -->
-		<section class="s_contacts">
+<!-- Section Contacts -->
+		<section class="s_contacts" id="contacts">
 			<h1>Контакты</h1>
 			<div class="inner_contacts">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-sm-12 col-md-8">
-							<div class="contact_form">
-								<input class="form_event" type="text" name="name" placeholder="You name" requered="">
-								<input class="form_event" type="text" name="name" placeholder="E-Mail" requered="">
-								<input class="form_event" type="text" name="name" placeholder="The Subject" requered="">
-								<textarea name="message" class="from_message" placeholder="Your message"></textarea>
-								<a href="#" class="btn">Отправить</a>
+							<form class="contact_form" action="https://formspree.io/bakamura08@gmail.com" novalidate target="_blank" method="post">
+						<label class="form-group">
+							<input class="form_event" type="text" name="name" placeholder="Ваше имя" data-validation-required-message="Вы не ввели имя" required />
+							<span class="help-block text-danger"></span>
+						</label>
+						<label class="form-group">
+							<input class="form_event" type="email" name="email" placeholder="Ваш E-mail" data-validation-required-message="Не корректно введен E-mail" required />
+							<span class="help-block text-danger"></span>
+						</label>
+						<label class="form-group">
+							<textarea class="from_message" name="message" placeholder="Ваше сообщение" data-validation-required-message="Вы не ввели сообщение" required></textarea>
+							<span class="help-block text-danger"></span>
+						</label>
+						<button class="btn">Отправить</button>
 							</div>
-						</div>
 						<div class="col-12 col-sm-12 col-md-4">
 							<div class="cont_detal">
-								<i class="far fa-envelope"></i><p>bakamura08@gmail.com</p> 
-								<i class="fab fa-telegram"></i><p>@vladoss12</p>
+								<p>E-Mail bakamura08@gmail.com</p> 
+								</i><p>Telegram @vladoss12</p>
 							</div>
-						</div>
+						</form>
 					</div>
+				</div>
 				</div>
 			</div>
 		</section>

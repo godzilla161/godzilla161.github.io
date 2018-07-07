@@ -1,0 +1,96 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	figure.work_item img {
+		height: 420px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.text_section .circle {
+		margin-top: 25px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	figure.work_item img {
+		height: 100%;
+	}
+	.text_section .circle {
+		font-size: 1em;
+		margin-top: 17px;
+	}
+	.contry_section .inner_contry img {
+		height: 100%;
+	}	 
+
+	.contry_section .inner_contry figcaption {
+		padding: 3.5em;
+	}
+	.contry_section h2 {
+		font-size: 2.5em;
+	}
+	.contry_section .inner_contry p {
+		font-size: 2em;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.top_wrapper .top_text h1 {
+		font-size: 1.425em;
+	}
+	.about_section p {
+		font-size: 0.8em;
+	}
+	.text_section .circle {
+		margin-top: 4px;
+		font-size: 0.8em;
+	}
+	.contry_section .inner_contry figcaption {
+		padding: 1.9em;
+	}
+	.contry_section .inner_contry figcaption::before {
+		top: 12px;
+		right: 10px;
+		bottom: 12px;
+		left: 10px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

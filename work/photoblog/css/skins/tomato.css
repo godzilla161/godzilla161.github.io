@@ -1,0 +1,13 @@
+body {
+  color: #222;
+  letter-spacing: 1px; }
+
+a {
+  color: #FF6347; }
+  a:hover {
+    color: #4f7f90; }
+  a:focus {
+    color: #39545e; }
+
+.main_color {
+  background-color: #222; }

@@ -1,31 +1,115 @@
 @import "vars"
+@import "bourbon/bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
 
 
-/*==========  Desktop First  ==========*/
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+.top_line
+	.nav_mnu
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		position: fixed
+		background-color: rgba(0,0,0, .6)
+		float: inherit
+		text-align: center
+		display: none
+		padding-top: 0
+		ul
+			margin-top: 90px
+			li
+				padding: 20px
+				display: block
+				a 
+					font-size: 45px
 
-// ≥1200px
-+media-breakpoint-down(lg)
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
 
-// ≥992px
-+media-breakpoint-down(md)
 
-// ≥768px
-+media-breakpoint-down(sm)
-
-// ≥576px
-+media-breakpoint-down(xs)
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
 
 
-/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
 
-// ≤576px
-+media-breakpoint-up(sm)
 
-// ≤768px
-+media-breakpoint-up(md)
+/*==========  Mobile First Method  ==========*/
 
-// ≤992px
-+media-breakpoint-up(lg)
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
 
-// ≤1200px
-+media-breakpoint-up(xl)
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+	.s_work
+		.inner_work
+			p
+				padding-left: 10px				
+			a
+				padding: 10px
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+	.top_line
+		.top_wrapper
+			.top_descr
+				.top_centered
+					.top_text 
+						h1
+							font-size: 25px
+						h2 
+							font-size: 42px
+	.s_work
+		.inner_work
+			p
+				padding-left: 10px				
+			a
+				padding: 10px		
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+	
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/

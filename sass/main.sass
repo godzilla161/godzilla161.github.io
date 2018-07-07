@@ -1,6 +1,6 @@
 @import "vars"
-@import "fonts"
 @import "libs"
+@import "fonts"
 
 ::placeholder
 	color: #666
@@ -14,7 +14,7 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	font-family: $default-font
+	font-family: HelveticaLight
 	overflow-x: hidden
 	color: $text
 	input, textarea
@@ -26,6 +26,80 @@ body
 			border-color: green
 section,header
 	position: relative
+.menu
+	width: 60px
+	height: 60px
+	z-index: 100
+	border: none
+	position: fixed
+	background-color: rgba(113,119,98, .5)
+	right: 20px
+	top: 20px
+	span
+		display: block
+
+
+$w: 28px
+$h: 3px
+
+.sandwich 
+	width: $w
+	height: $w
+	position: absolute
+	top: 8px
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 200
+
+.sw-topper
+	position: relative
+	top: 0
+	width: $w 
+	height: $h
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	display: block
+			
+	//transition-delay: 0.2s, 0s
+
+
+
+
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 2.2
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 4.5
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: 0.1s
+.sandwich.active
+	.sw-topper
+		top: 9px
+		transform: rotate(-45deg)
+	.sw-bottom
+		top: 6px
+		transform: rotate(45deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
 .btn
 	font-family: RalewayExtraBold
 	font-size: 14px
@@ -34,15 +108,21 @@ section,header
 	background-color: #998675
 	border-bottom: 3px solid #736357
 	border-radius: 5px
+	border-left: none
+	border-top: none
 	padding: 15px 45px
+	&:click
+		border: none
 	&:hover
 		color: #fff
 		text-decoration: none
+
 .main_head
 	background-image: url(../img/2.jpg)
 	background-repeat: no-repeat
 	background-position: top center
-	height: 650px
+	background-size: cover
+	background-attachment: fixed
 .loader
 	background: none repeat scroll 0 0 #ffffff
 	bottom: 0
@@ -72,11 +152,10 @@ section,header
 	z-index: 11
 	top: 0
 	left: 0
-	right: 0	
-	.logo
-		padding-top: 20px
-		img
-			width: 80px
+	right: 0
+
+
+	
 	.nav_mnu
 		padding-top: 35px
 		float: right
@@ -100,7 +179,7 @@ section,header
 		top: 0
 		left: 0
 		z-index: 10
-		background: rgba(58,61,63, .4);
+		background: rgba(58,61,63, .4)
 		.top_descr
 			display: table-row
 			.top_centered
@@ -110,19 +189,19 @@ section,header
 				.top_text
 					display: inline-block
 					h1 
-						font-family: Raleway Medium
+						font-family: RalewayMedium
 						font-size: 36px
 						color: #fff
 					h2 
-						font-family: Raleway ExtraBold
+						font-family: RalewayExtraBold
 						font-size: 52px
 						color: #fff
 					p
-						font-family: Myriad Pro Regular
+						font-family: MyriadProRegular
 						font-size: 16px
 						color: #fff
 						margin-bottom: 40px
-.about
+.s_about
 	.author_info
 		margin-top: 105px
 		h1
@@ -143,7 +222,7 @@ section,header
 		margin-left: 40%
 		margin-top: 85px
 
-.info
+.s_info
 	margin-top: 200px	
 	img
 		width: 100%
@@ -153,7 +232,7 @@ section,header
 		color: #8c8c8c
 		text-align: center
 					
-.services
+.s_services
 	margin-top: 200px
 
 	.services_item
@@ -172,7 +251,7 @@ section,header
 			font-family: MyriadProRegular
 			font-size: 15px
 			color: #8c8c8c
-.quality_work
+.s_quality_work
 	margin-top: 200px
 	margin-bottom: 180px
 	h3
@@ -243,7 +322,7 @@ section,header
 			margin-top: 30px
 			margin-bottom: 15px
 		p
-			font-family: Raleway
+			font-family: RalewayRegular
 			color: #fff
 			font-size: 28px
 			text-align: left
@@ -255,8 +334,8 @@ section,header
 			margin-left: 180px
 			margin-bottom: 30px
 		a
-			img
-				width: 66px
+			font-size: 25px
+			color: #555555 
 
 .s_contacts
 	h1 
@@ -271,6 +350,8 @@ section,header
 		padding-top: 55px
 		padding-bottom: 55px
 		.contact_form
+			label
+				display: block
 			h2
 				font-family: RalewayMedium
 				font-size: 25px 
@@ -283,7 +364,6 @@ section,header
 				color: #fff
 				padding: 12px 12px
 				border-radius: 2px
-				border: none
 				margin-top: 20px
 			.from_message
 				width: 100%
@@ -292,7 +372,6 @@ section,header
 				font-family: LatoBlack
 				font-size: 15px
 				padding: 15px 12px
-				border: none
 				margin-top: 20px
 		.cont_detal
 			h1 
@@ -300,9 +379,9 @@ section,header
 			font-size: 15px
 			color: #fff
 			p
-				font-family: Myriad Pro Regular
+				font-family: MyriadProRegular
 				color: #fff
-				font-size: 15px
+				font-size: 20px
 				display: inline-block
 				margin: 10px
 			i
