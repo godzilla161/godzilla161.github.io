@@ -29,7 +29,7 @@
 </head>
 
 <body>
-
+<!-- Section Header -->
 	<header>
 		<div class="top_line">
 			<div class="container">
@@ -71,7 +71,7 @@
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-4">
 				<div class="author_photo">
-					<img src="img/photo_author.png" alt="About me">
+					<img src="/img/photo_author.png" alt="About me">
 				</div>
 				</div>
 				<div class="col-12 col-sm-12 col-md-8">
@@ -101,9 +101,8 @@
 			</div>
 			</div>
 		</div>
-		</div>
 	</section>
-
+<!-- Section Portfolio -->
 	<section class="s_portfolio" id="portfolio">
 		<h1>My portfolio</h1>
 		<div class="container">
@@ -145,6 +144,7 @@
 		</div>
 		</div>
 	</section>
+<!-- Section Blog -->
 <section class="blog">
 		<h1>Latest blog posts</h1>
 	<div class="container">
@@ -184,32 +184,29 @@
 		</div>
 	</div>
 </section>
-
+<!-- Section Contact -->
 <section class="contact">
 	<h1>Get in touch</h1>
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-sm-12 col-md-8">
-				<form class="contact_form" action="https://formspree.io/bakamura08@gmail.com" novalidate target="_blank" method="post">
+				<form class="contact_form" action="http://formspree.io/bakamura08@gmail.com" class="main_form" novalidate target="_blank" method="post">
 					<label class="form-group">
-						<input class="form_event" type="text" name="name" placeholder="Your name" data-validation-required-message="Вы не ввели имя" required />
-						<span class="help-block text-danger"></span>
+						<input class="form_event" type="text" name="name" placeholder="Ваше имя" data-validation-required-message="Вы не ввели имя" required />
 					</label>
 					<label class="form-group">
-						<input class="form_event" type="email" name="email" placeholder="Your E-mail" data-validation-required-message="Не корректно введен E-mail" required />
-						<span class="help-block text-danger"></span>
+						<input class="form_event" type="email" name="email" placeholder="Ваш E-mail" data-validation-required-message="Не корректно введен E-mail" required />
 					</label>
 					<label class="form-group">
 						<input class="form_event" type="text" name="email" placeholder="The subject" data-validation-required-message="Не корректно введен E-mail" required />
 						<span class="help-block text-danger"></span>
 					</label>
 					<label class="form-group">
-						<textarea class="from_message" name="message" placeholder="Your message" data-validation-required-message="Вы не ввели сообщение" required></textarea>
-						<span class="help-block text-danger"></span>
+						<textarea class="from_message" name="message" placeholder="Ваше сообщение" data-validation-required-message="Вы не ввели сообщение" required></textarea>
 					</label>
-					<button class="btn" >Отправить</button>
+					<button class="btn">Отправить</button>
+				</form>
 						</div>
-			
 			<div class="col-12 col-sm-12 col-md-4">
 				<div class="cont_detal">
 				<h2>Contact Details</h2>
@@ -221,8 +218,8 @@
 		</div>
 		</div>
 	</div>
-</div>
 </section>
+<!-- Section Footer -->
 <footer>
 	<div class="container">
 		<div class="row">
@@ -239,6 +236,5 @@
 	</div>
 </footer>
 	<script src="js/scripts.min.js"></script>
-
 </body>
 </html>
