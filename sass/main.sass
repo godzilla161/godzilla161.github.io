@@ -110,6 +110,7 @@ $h: 3px
 	border-bottom: 3px solid #736357
 	border-radius: 5px
 	border-left: none
+	border-right: none
 	border-top: none
 	padding: 15px 45px
 	&:click
@@ -155,21 +156,27 @@ $h: 3px
 	left: 0
 	right: 0
 
-
-	
 	.nav_mnu
-		padding-top: 35px
-		float: right
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		right: 0
+		bottom: 0
+		position: fixed
+		background-color: rgba(0,0,0, .6)
+		float: inherit
+		text-align: center
+		display: none
+		padding-top: 0
 		ul
+			margin-top: 155px
 			li
-				list-style-type: none
-				display: inline-block
-				margin-left: 40px
+				padding: 20px
+				display: block
 				a
-					font-family: LatoBlack
-					font-size: 14px
-					text-transform: uppercase
 					color: #fff
+					font-size: 25px
 
 .main_head
 	.top_wrapper
@@ -193,15 +200,18 @@ $h: 3px
 						font-family: RalewayMedium
 						font-size: 36px
 						color: #fff
+						letter-spacing: inherit
 					h2 
 						font-family: RalewayExtraBold
 						font-size: 52px
 						color: #fff
+						letter-spacing: inherit
 					p
 						font-family: MyriadProRegular
 						font-size: 16px
 						color: #fff
 						margin-bottom: 40px
+						letter-spacing: inherit
 .s_about
 	.author_info
 		margin-top: 105px
